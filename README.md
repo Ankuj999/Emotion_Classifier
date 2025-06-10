@@ -44,11 +44,16 @@ Data Loading: The dair-ai/emotion dataset is loaded and converted to Pandas Data
 Label Mapping: Numeric labels are mapped to human-readable emotion names.
 Text Cleaning: A clean_text function is applied to preprocess the raw tweet text, removing unwanted characters, URLs, and mentions.
 Feature Extraction: TfidfVectorizer is used to convert the cleaned text into numerical TF-IDF features.
-Label Encoding: Emotion labels are transformed into numerical representations using LabelEncoder.
+Label Encoding: Emotion labels are transformed into numerical representations using LabelEncoder.![Screenshot 2025-06-10 164409](https://github.com/user-attachments/assets/a006e8a2-927f-4412-98d6-e66eaebe61a6)
+
 Model Training: An XGBClassifier is trained on the vectorized text data with early stopping to prevent overfitting.
 Model Saving: The trained XGBoost model, TfidfVectorizer, and LabelEncoder are saved using joblib for later use in the Streamlit application.
 🚀 Deployment on Render
 This application is designed for easy deployment on platforms like Render.
+
+Screenshots of the confusion matrix and accuracy
+![Screenshot 2025-06-10 164409](https://github.com/user-attachments/assets/510402c8-f6b5-43d9-a2c6-60c83de1dc9e)
+
 
 Deployment Steps:
 Prepare your files: Ensure all necessary files (app.py, xgb_model2.pkl, vectorizer2.pkl, label_encoder2.pkl, Mask.webp, requirements.txt, Procfile) are in the root of your project directory.
